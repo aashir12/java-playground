@@ -6,11 +6,20 @@ class vehichle{
     int vehicle_id;
 }
 public class Car extends vehichle{
+    private String owner_name;
     public String color;
     public String brand;
     public String model;
     public int year;
     public int speed;
+
+    public void setOwner_name(String owner_name) {
+        this.owner_name = owner_name;
+    }
+
+    public String getOwner_name() {
+        return owner_name;
+    }
 
     public void set_vehicle_id(int vehicleId){
         vehicle_id = vehicleId;

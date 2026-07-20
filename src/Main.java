@@ -8,6 +8,8 @@ public class Main {
         car.speed = 210;
         car.model = "city";
 
+        car.setOwner_name("Aashir");
+        car.getOwner_name();
         car.set_vehicle_id(1);
         car.get_vehicle_id();
         System.out.println(car.model);
