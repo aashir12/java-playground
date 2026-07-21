@@ -4,6 +4,12 @@ class vehichle{
     boolean tyres;
     String car_type;
     int vehicle_id;
+    private static int nextId =1;
+
+
+    vehichle(){
+        vehicle_id = nextId++;
+    }
 }
 public class Car extends vehichle{
     private String owner_name;
@@ -12,6 +18,7 @@ public class Car extends vehichle{
     public String model;
     public int year;
     public int speed;
+
 
     public void setOwner_name(String owner_name) {
         this.owner_name = owner_name;
