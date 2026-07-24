@@ -13,6 +13,7 @@ public class Main {
         car.brand = "honda";
         car.speed = 210;
         car.model = "city";
+        car.SetCarType("Sedan");
 
         car.setOwner_name("Aashir");
         car.getOwner_name();
@@ -26,8 +27,9 @@ public class Main {
         bike1.speed = 110;
         bike1.model = "125";
         bike1.get_vehicle_id();
-
-
+        bike1.SetCarType("bike");
+        car.horn();
+        bike1.horn();
 
     }
 }
