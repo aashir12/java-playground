@@ -1,18 +1,6 @@
 package test;
 
-class vehichle{
-    boolean tyres;
-    String car_type;
-    int vehicle_id;
-    private static int nextId =1;
-
-
-    vehichle(){
-        vehicle_id = nextId++;
-    }
-
-}
-public class Car extends vehichle{
+public class Bike extends vehichle{
     private String owner_name;
     public String color;
     public String brand;
@@ -37,7 +25,7 @@ public class Car extends vehichle{
     }
 
     public void accelerate(int increment) {
-    speed+=increment;
+        speed+=increment;
     }
     public void brake(int decrement) {
         speed-=decrement;
