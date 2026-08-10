@@ -1,24 +1,6 @@
 package test;
 
-class vehichle{
-    boolean tyres;
-    String car_type;
-    int vehicle_id;
-    private static int nextId =1;
-
-
-    vehichle(){
-        vehicle_id = nextId++;
-    }
-    public void horn(){
-        System.out.println("Horning " + car_type);
-    }
-
-    public void SetCarType(String car_type) {
-        this.car_type = car_type;
-    }
-}
-public class Car extends vehichle{
+public class Bike extends vehichle{
     private String owner_name;
     public String color;
     public String brand;
@@ -35,11 +17,6 @@ public class Car extends vehichle{
         return owner_name;
     }
 
-    @Override
-    public void SetCarType(String car_type){
-        this.car_type = car_type;
-    }
-
     public void set_vehicle_id(int vehicleId){
         vehicle_id = vehicleId;
     }
@@ -48,7 +25,7 @@ public class Car extends vehichle{
     }
 
     public void accelerate(int increment) {
-    speed+=increment;
+        speed+=increment;
     }
     public void brake(int decrement) {
         speed-=decrement;

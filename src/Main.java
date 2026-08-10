@@ -17,8 +17,6 @@ public class Main {
 
         car.setOwner_name("Aashir");
         car.getOwner_name();
-        car.set_vehicle_id(1);
-        car.get_vehicle_id();
         System.out.println(car.model);
         car.get_vehicle_id();
         car2.get_vehicle_id();
