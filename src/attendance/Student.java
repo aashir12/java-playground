@@ -39,12 +39,10 @@ public class Student {
         boolean hairCut;
     }
 
-    void setUniform() {
-        Uniform student1 = new Uniform();
-
-        student1.tie = true;
-        student1.shoePolished = true;
-        student1.officialShoe = true;
-        student1.hairCut = true;
+    void setUniform(Uniform student) {
+        student.tie = true;
+        student.shoePolished = true;
+        student.officialShoe = true;
+        student.hairCut = true;
     }
 }
