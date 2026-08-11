@@ -20,4 +20,12 @@ public class Student {
     public void setClassName(String className) {
         this.className = className;
     }
+
+    static{
+        rollNumber++;
+    }
+
+    Student(){
+        System.out.println("Student No = "+rollNumber);
+    }
 }
