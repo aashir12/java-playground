@@ -1,6 +1,6 @@
 package attendance;
 
-public class Student {
+public class Student implements  Bacha{
 
     public static int rollNumber = 0;
 
@@ -45,4 +45,5 @@ public class Student {
         student.officialShoe = true;
         student.hairCut = true;
     }
+
 }
