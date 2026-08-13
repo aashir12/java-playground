@@ -1,8 +1,12 @@
 package attendance;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Student implements  Bacha{
 
     public static int rollNumber = 0;
+    public List<Boolean> weeklyAttendance = new ArrayList<>();
 
     private String name;
     private String className;

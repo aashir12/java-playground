@@ -11,6 +11,25 @@ public class Main {
         aashir.setName("Aashir");
         aashir.setClassName("6th semester");
 
+        // weekly attendence
+        for (int day = 0; day < 7; day++) {
+            if (day % 2 == 0) {
+                aashir.weeklyAttendance.add(true);
+            } else {
+                aashir.weeklyAttendance.add(false);
+            }
+        }
+        for(int day = 0 ; day<7 ; day++){
+            if(day%2!=0){
+                shayan.weeklyAttendance.add(true);
+            }
+            else{
+                shayan.weeklyAttendance.add(false);
+            }
+        }
+        System.out.println(aashir.weeklyAttendance);
+        System.out.println(shayan.weeklyAttendance);
+
         // inner class object
         Student.Uniform aashirKaUniform = aashir.new Uniform();
         Student.Uniform shayanKaUniform = shayan.new Uniform();
