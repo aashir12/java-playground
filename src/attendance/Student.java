@@ -32,14 +32,14 @@ public class Student implements  Bacha{
         System.out.println("Student No = " + rollNumber);
     }
 
-    class Uniform {
+    public class Uniform {
         boolean tie;
         boolean shoePolished;
         boolean officialShoe;
         boolean hairCut;
     }
 
-    void setUniform(Uniform student) {
+    public void setUniform(Uniform student) {
         student.tie = true;
         student.shoePolished = true;
         student.officialShoe = true;

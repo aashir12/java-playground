@@ -33,5 +33,11 @@ public class Main {
         car.horn();
         bike1.horn();
 
+        Student.Uniform uniform= student.new Uniform();
+
+        student.setName("Aashir");
+        student.setClassName("fifth");
+        student.setUniform(uniform);
+
     }
 }
