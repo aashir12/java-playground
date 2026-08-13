@@ -28,7 +28,7 @@ public class Student implements  Bacha{
         rollNumber++;
     }
 
-    Student() {
+    public Student() {
         System.out.println("Student No = " + rollNumber);
     }
 

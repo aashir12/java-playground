@@ -1,3 +1,4 @@
+import attendance.Student;
 import test.Bike;
 import test.Car;
 
@@ -6,6 +7,7 @@ public class Main {
         Car car = new Car();
         Car car2 = new Car();
         Car car3 = new Car();
+        Student student = new Student();
         Bike bike1 = new Bike();
 
 
