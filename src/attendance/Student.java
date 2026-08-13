@@ -45,5 +45,11 @@ public class Student implements  Bacha{
         student.officialShoe = true;
         student.hairCut = true;
     }
+    public void getUniform(Uniform student) {
+        System.out.println(student.tie);
+        System.out.println(student.shoePolished);
+        System.out.println(student.officialShoe);
+        System.out.println(student.hairCut);
+    }
 
 }
