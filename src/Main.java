@@ -15,12 +15,12 @@ public class Main {
         aashir.subjects.add("english");
         aashir.subjects.add("urdu");
         aashir.subjects.add("urdu");
-        shayan.subjects.add("urdu");
-        shayan.subjects.add("urdu");
+        aashir.subjects.add("hindi");
+        aashir.subjects.add("islamiat");
+        aashir.subjects.add("arabic");
 
-        System.out.println(aashir.subjects);
-        System.out.println(shayan.subjects);
-
+        Student.printSubjects(aashir);
+        Student.printSubjects(shayan);
 
         // weekly attendence
         for (int day = 0; day < 7; day++) {

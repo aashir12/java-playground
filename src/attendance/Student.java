@@ -36,6 +36,14 @@ public class Student implements  Bacha{
         System.out.println("Student No = " + rollNumber);
     }
 
+    public static void printSubjects(Student student) {
+        if (student.subjects == null || student.subjects.isEmpty()) {
+            System.out.println("Subjects are not added yet");
+        } else {
+            System.out.println(student.subjects);
+        }
+    }
+
     // inner nested class
 
     public class Uniform {
