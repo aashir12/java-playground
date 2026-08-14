@@ -1,12 +1,12 @@
 package attendance;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Student implements  Bacha{
 
     public static int rollNumber = 0;
-    public List<Boolean> weeklyAttendance = new ArrayList<>();
+    public Set<Boolean> weeklyAttendance = new HashSet<>();
+    public Set<String> subjects = new HashSet<>();
 
     private String name;
     private String className;
@@ -35,6 +35,8 @@ public class Student implements  Bacha{
     public Student() {
         System.out.println("Student No = " + rollNumber);
     }
+
+    // inner nested class
 
     public class Uniform {
         boolean tie;

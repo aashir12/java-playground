@@ -11,6 +11,17 @@ public class Main {
         aashir.setName("Aashir");
         aashir.setClassName("6th semester");
 
+        // linked list
+        aashir.subjects.add("english");
+        aashir.subjects.add("urdu");
+        aashir.subjects.add("urdu");
+        shayan.subjects.add("urdu");
+        shayan.subjects.add("urdu");
+
+        System.out.println(aashir.subjects);
+        System.out.println(shayan.subjects);
+
+
         // weekly attendence
         for (int day = 0; day < 7; day++) {
             if (day % 2 == 0) {
