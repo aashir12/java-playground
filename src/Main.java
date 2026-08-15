@@ -1,19 +1,22 @@
 import attendance.Student;
-import test.Bike;
-import test.Car;
 
 public class Main {
     public static void main(String[] args) {
         Student aashir = new Student();
         Student shayan = new Student();
+
         shayan.setName("Shayan");
         shayan.setClassName("1st year");
+
         aashir.setName("Aashir");
         aashir.setClassName("6th semester");
 
-        // linked list
+        // Queue
+        Student.students.offer(aashir);
+        Student.students.offer(shayan);
+
+        // Set Subjects
         aashir.subjects.add("english");
-        aashir.subjects.add("urdu");
         aashir.subjects.add("urdu");
         aashir.subjects.add("hindi");
         aashir.subjects.add("islamiat");
@@ -22,33 +25,21 @@ public class Main {
         Student.printSubjects(aashir);
         Student.printSubjects(shayan);
 
-        // weekly attendence
+        // Weekly attendance loop
         for (int day = 0; day < 7; day++) {
-            if (day % 2 == 0) {
-                aashir.weeklyAttendance.add(true);
-            } else {
-                aashir.weeklyAttendance.add(false);
-            }
+            aashir.weeklyAttendance.add(day % 2 == 0);
+            shayan.weeklyAttendance.add(day % 2 != 0);
         }
-        for(int day = 0 ; day<7 ; day++){
-            if(day%2!=0){
-                shayan.weeklyAttendance.add(true);
-            }
-            else{
-                shayan.weeklyAttendance.add(false);
-            }
-        }
+
         Student.printWeeklyAttendance(aashir);
         Student.printWeeklyAttendance(shayan);
 
-        // inner class object
-        Student.Uniform aashirKaUniform = aashir.new Uniform();
-        Student.Uniform shayanKaUniform = shayan.new Uniform();
+        // Assign uniforms BEFORE printing the final queue output
+        aashir.setUniform(true, true, false, false);
+        shayan.setUniform(true, false, false, true);
 
-        // calling objects
-        aashir.setUniform(aashirKaUniform);
-        aashir.getUniform(aashirKaUniform);
-        shayan.getUniform(shayanKaUniform);
-
+        // Print final queue state (uniforms will now show correctly)
+        System.out.println("\n--- Final Students Queue ---");
+        Student.printStudents();
     }
 }
