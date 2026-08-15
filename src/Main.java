@@ -38,8 +38,8 @@ public class Main {
                 shayan.weeklyAttendance.add(false);
             }
         }
-        System.out.println(aashir.weeklyAttendance);
-        System.out.println(shayan.weeklyAttendance);
+        Student.printWeeklyAttendance(aashir);
+        Student.printWeeklyAttendance(shayan);
 
         // inner class object
         Student.Uniform aashirKaUniform = aashir.new Uniform();

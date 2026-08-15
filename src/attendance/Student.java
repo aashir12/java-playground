@@ -5,8 +5,8 @@ import java.util.*;
 public class Student implements  Bacha{
 
     public static int rollNumber = 0;
-    public Set<Boolean> weeklyAttendance = new HashSet<>();
-    public Set<String> subjects = new HashSet<>();
+    public Set<Boolean> weeklyAttendance = new TreeSet<>();
+    public Set<String> subjects = new TreeSet<>();
 
     private String name;
     private String className;
@@ -34,6 +34,15 @@ public class Student implements  Bacha{
 
     public Student() {
         System.out.println("Student No = " + rollNumber);
+    }
+
+    public static void printWeeklyAttendance(Student student){
+        if(student.weeklyAttendance != null){
+            System.out.println(student.weeklyAttendance);
+        }
+        else{
+            System.out.println("Student is empty");
+        }
     }
 
     public static void printSubjects(Student student) {
