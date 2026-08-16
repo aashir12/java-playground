@@ -7,6 +7,7 @@ public class Student implements Bacha {
     public static int rollNumber = 0;
     public Set<Boolean> weeklyAttendance = new TreeSet<>();
     public Set<String> subjects = new TreeSet<>();
+    public Deque<String> friends = new ArrayDeque<>();
     public static Queue<Student> students = new LinkedList<>();
 
     private String name;

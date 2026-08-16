@@ -15,6 +15,9 @@ public class Main {
         Student.students.offer(aashir);
         Student.students.offer(shayan);
 
+        //Deque
+        aashir.friends.offer("hamza");
+
         // Set Subjects
         aashir.subjects.add("english");
         aashir.subjects.add("urdu");
