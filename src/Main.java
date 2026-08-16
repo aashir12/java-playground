@@ -15,8 +15,18 @@ public class Main {
         Student.students.offer(aashir);
         Student.students.offer(shayan);
 
-        //Deque
-        aashir.friends.offer("hamza");
+        //Priorty Queue
+        aashir.friends.add("hamza");
+        System.out.println(aashir.friends);
+        aashir.friends.offer("jay");
+        aashir.friends.offer("ali");
+        aashir.friends.offer("nadeem");
+
+        System.out.println(aashir.friends.poll());
+        System.out.println(aashir.friends);
+
+        System.out.println(aashir.friends);
+
 
         // Set Subjects
         aashir.subjects.add("english");
