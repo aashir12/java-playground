@@ -58,6 +58,10 @@ public class Student implements Bacha {
         boolean officialShoe;
         boolean hairCut;
 
+        public Uniform(){
+            System.out.println("Uniform Class Initialized");
+        }
+
         public String returnUniform() {
             return "[tie = " + this.tie + " , shoePolished = " + shoePolished + ", officialShoe = " + officialShoe + ", hairCut = " + this.hairCut + "]";
         }
