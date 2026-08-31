@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.concurrent.CompletableFuture;
 
-@Service // Spring Bean Annotation
+@Service
 public class StudentServiceImpl implements StudentService {
 
     private final StudentRepository studentRepository;
