@@ -16,6 +16,7 @@ public class StudentServiceImpl implements StudentService {
     // Dependency Injection via constructor
     public StudentServiceImpl(StudentRepository studentRepository, AttendanceProcessor attendanceProcessor) {
         this.studentRepository = studentRepository;
+
         this.attendanceProcessor = attendanceProcessor;
     }
 
