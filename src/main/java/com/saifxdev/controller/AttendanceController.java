@@ -37,7 +37,7 @@ public class AttendanceController{
     }
 
     @GetMapping("/search/students")
-    public List<Student> getAllStudents(){
-        return studentService.getAllStudents();
+    public ResponseEntity<List<Student>> getAllStudents(){
+        return ResponseEntity.ok(studentService.getAllStudents());
     }
 }
