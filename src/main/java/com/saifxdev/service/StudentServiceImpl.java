@@ -5,6 +5,7 @@ import com.saifxdev.model.Student;
 import com.saifxdev.repository.StudentRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 @Service
@@ -37,4 +38,10 @@ public class StudentServiceImpl implements StudentService {
                 .orElseThrow(() -> new StudentNotException("Student not found with ID: " + studentId));
         return attendanceProcessor.calculatePercentageAsync(student.getWeeklyAttendance());
     }
+
+    @Override
+    public List<Student> getAllStudents(){
+        return studentRepository.findAll();
+    }
+
 }
