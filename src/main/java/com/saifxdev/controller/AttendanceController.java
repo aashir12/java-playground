@@ -1,5 +1,6 @@
 package com.saifxdev.controller;
 
+import com.saifxdev.dto.StudentDeleteResponse;
 import com.saifxdev.model.Student;
 import com.saifxdev.service.StudentService;
 import org.springframework.http.ResponseEntity;
@@ -12,14 +13,14 @@ import java.util.concurrent.CompletableFuture;
 @RequestMapping("/api/attendance")
 public class AttendanceController{
 
-    private static StudentService studentService;
+    private final StudentService studentService;
 
     public AttendanceController(StudentService studentService){
         this.studentService = studentService;
     }
 
     @PostMapping("/student")
-    public ResponseEntity<Student> registerStudent(Student student){
+    public ResponseEntity<Student> registerStudent(@RequestBody Student student){
         return ResponseEntity.ok(studentService.registerStudent(student));
     }
 
@@ -27,6 +28,13 @@ public class AttendanceController{
     public ResponseEntity<Student> getStudent(@PathVariable String rollNumber){
         return ResponseEntity.ok(
                 studentService.getStudentByRollNumber(rollNumber)
+        );
+    }
+
+    @DeleteMapping("/students/{rollNumber}")
+    public ResponseEntity<StudentDeleteResponse> deleteStudent(@PathVariable String rollNumber){
+        return ResponseEntity.ok(
+                studentService.deleteStudentByRollNumber(rollNumber)
         );
     }
 
