@@ -19,7 +19,7 @@ public class AttendanceController{
         this.studentService = studentService;
     }
 
-    @PostMapping("/student")
+    @PostMapping("/create-student")
     public ResponseEntity<Student> registerStudent(@RequestBody Student student){
         return ResponseEntity.ok(studentService.registerStudent(student));
     }
