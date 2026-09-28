@@ -1,5 +1,4 @@
 package com.saifxdev.dto;
-package com.saifxdev.dto;
 
 import java.util.List;
 import java.util.Set;
